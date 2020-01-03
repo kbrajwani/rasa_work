@@ -1,0 +1,56 @@
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- bot_challenge
+- inform
+entities:
+- category
+- item
+- size
+- quantity
+- order
+slots:
+  category:
+    type: unfeaturized
+  item:
+    type: unfeaturized
+  order:
+    type: list
+  quantity:
+    type: unfeaturized
+  size:
+    type: unfeaturized
+templates:
+  utter_greet:
+  - text: Hey! what you like to serve?
+  utter_ask_quantity:
+  - text: tell me quantity?
+  utter_ask_item:
+  - text: Which item you want?
+  utter_wrong_item:
+  - text: Sorry we are currently not serving this plz order anything else.
+  utter_ask_size:
+  - text: Which size you want medium, small ,large?
+  utter_order:
+  - text: your order is {order} {item} {size} {quantity}
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Solusoft.
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- find_menu
+- utter_wrong_item
+- find_sub_menu
+- utter_ask_quantity
+- utter_ask_item
+- utter_ask_size
+- utter_goodbye
+- utter_iamabot
+- utter_order
+forms:
+- order_form

@@ -1,0 +1,17 @@
+{
+    "lunch":{
+    "pizza":{"Margherita":{"small":"150rs","medium":"200rs","large":"300rs"},
+        "Peppy Paneer":{"small":"150rs","medium":"200rs","large":"300rs"},
+        "CHEESE N CORN":{"small":"150rs","medium":"200rs","large":"300rs"}
+        },
+ "burger":{
+    "BURGER PIZZA- CLASSIC VEG":"200rs",
+    "BURGER PIZZA- PREMIUM VEG":"300rs",
+    "BURGER PIZZA- CLASSIC NON VEG":"500rs"
+ }},
+ "breakfast":{
+ "Desserts":{
+     "Lava Cake": "200rs",
+     "Butterscotch Mousse Cake" : "500rs"
+ }}
+ }
