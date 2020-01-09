@@ -1,0 +1,97 @@
+intents:
+- greet
+- utter_take_order
+- goodbye
+- affirm
+- deny
+- bot_challenge
+- inform
+- see_menu
+- do_order
+- inform_type
+- choose
+entities:
+- menu
+- item
+- size
+- quantity
+- order
+- category
+- confirmation
+slots:
+  cart:
+    type: list
+  category:
+    type: text
+  confirmation:
+    type: text
+  item:
+    type: text
+  menu:
+    type: text
+  order:
+    type: text
+  quantity:
+    type: unfeaturized
+  requested_slot:
+    type: unfeaturized
+  size:
+    type: text
+templates:
+  utter_greet:
+  - text: Hey! You want to see menu or do direct order?
+    buttons:
+    - payload: /see_menu
+      title: menu
+    - payload: /do_order
+      title: want to type
+  utter_take_order:
+  - text: Hey! what you like to serve?
+  utter_something_went_wrong:
+  - text: Hey! Something went wrong please try again...
+  utter_didnt_get:
+  - text: Hey! I didn't get you please try again...
+  utter_wrong_quantity:
+  - text: Please type quantity in 1 to 20
+  utter_ask_quantity:
+  - text: tell me quantity?
+  utter_ask_item:
+  - text: Which item you want?
+  utter_wrong_item:
+  - text: Sorry we are currently not serving this plz order anything else.
+  utter_ask_size:
+  - text: Which size you want medium, small ,large?
+  utter_ask_category:
+  - text: Which type of {item} you want?
+  utter_ask_confirmation:
+  - text: should i add item into cart?
+    buttons:
+    - payload: '/choose{"confirmation": "True"}'
+      title: Add in cart
+    - payload: '/choose{"confirmation": "False"}'
+      title: Cancel
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Solusoft.
+  utter_affirm:
+  - text: Your order is placed.
+actions:
+- utter_greet
+- utter_didnt_get
+- utter_wrong_item
+- utter_ask_category
+- utter_wrong_quantity
+- utter_something_went_wrong
+- utter_take_order
+- find_menu
+- place_order
+- utter_ask_quantity
+- utter_ask_confirmation
+- utter_ask_item
+- utter_ask_size
+- utter_goodbye
+- utter_iamabot
+- utter_affirm
+forms:
+- order_form_type

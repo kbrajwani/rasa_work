@@ -1,0 +1,19 @@
+{
+    "lunch":{
+        "pizza":{"margherita":{"small":150,"medium":200,"large":300},
+            "peppy paneer":{"small":150,"medium":200,"large":300},
+            "cheese n corn":{"small":150,"medium":200,"large":300}
+            },
+    "burger":{
+        "burger pizza- classic veg":200,
+        "burger pizza- premium veg":300,
+        "burger pizza- classic non veg":500
+    }},
+ "breakfast":{
+ "desserts":{
+     "lava cake": 200,
+     "butterscotch mousse cake" : 500
+ }}
+ }
+
+ 
